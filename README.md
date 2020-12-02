@@ -11,4 +11,4 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 ___________________________________________
 
 ## URL:
-https://jacquelinealves.github.io/pegue-seu-cupom/index.html
+https://jacquelinealves.github.io/pegue-seu-cupom/
