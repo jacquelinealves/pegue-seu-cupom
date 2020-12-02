@@ -1,0 +1,94 @@
+.card {
+  &-deck {
+
+    .card {
+      color: $text--white;
+      font-family: Arial, sans-serif;
+      margin-bottom: 30px;
+      text-align: center;
+
+      .color--orange {
+        background-color: $color--orange;
+      }
+      .color--green {
+        background-color: $color--green;
+      }
+
+      .button-get-cupon {
+        @media screen and (max-width: $break-small) {
+          width: 100%;
+        }
+      }
+
+      &-top {
+        font-family: Arial, sans-serif;
+        font-weight: 600;
+        position: relative;
+
+        .label {
+          background-color: $color--orange;
+          padding: 2px;
+          padding-left: 20px;
+          position: absolute;
+          top: 15px;
+          right: 0;
+          z-index: 2;
+
+          @media screen and (max-width: $break-small) {
+            text-align: center;
+            top: 0;
+            width: 100%;
+          }
+
+          &-badge {
+            background-color: $color--black;
+            border-radius: 0;
+            font-size: 16px;
+            margin-left: 20px;
+            padding: 10px;
+          }
+        }
+
+        .descount {
+          bottom: -27px;
+          font-size: 70px;
+          left: 30px;
+          position: absolute;
+          z-index: 2;
+        }
+      }
+
+      &-title {
+        font-weight: 600;
+        text-align: left;
+      }
+
+      &-text{
+        text-align: left;
+      }
+
+      .expire-text {
+        display: block;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      &-text-location small {
+        background-color: $color--black;
+        color: $text--white !important;
+        display: block;
+        font-weight: 600;
+        margin: 30px -1.25rem 0;
+        padding: 10px 0;
+        text-align: center;
+      }
+    }
+
+  }
+}
+
+.container-card {
+  .button--black {
+    padding: 10px 30px;
+  }
+}

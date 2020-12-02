@@ -1,0 +1,62 @@
+.page-index {
+
+  .background-full {
+    &--green {
+      color: $text--white;
+    }
+  }
+
+  .container {
+    &-main-page {
+      padding: 100px 0;
+    }
+
+    &-navigation {
+      .title {
+        color: $text--orange;
+        font-family: Arial, sans-serif;
+      }
+    }
+
+    &-hightlight {
+      font-family: Arial, sans-serif;
+      padding: 50px;
+      text-align: center;
+
+      .logo {
+        max-width: 205px;
+
+        @media screen and (max-width: $break-small) {
+          margin: 0 auto;
+        }
+      }
+
+      .text {
+        @media screen and (max-width: $break-small) {
+          font-size: 30px;
+          margin: 40px 0;
+        }
+      }
+
+      .button--black {
+        padding: 10px 30px;
+      }
+    }
+
+    &-explanation {
+      font-family: Arial, sans-serif;
+      padding: 100px 0;
+
+      .title {
+        font-size: 30px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+}

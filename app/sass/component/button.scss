@@ -1,0 +1,61 @@
+.button {
+  &--black {
+    background-color: $color--black;
+    color: $text--white;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $color--light-black;
+      color: $text--white;
+    }
+  }
+
+  &--orange {
+    background-color: $color--orange;
+    color: $text--white;
+  }
+
+  &:hover {
+    transition: all .4s ease-out;
+  }
+
+  &-search {
+    background-color: $color--orange;
+    border: 1px solid $color--orange;
+    border-radius: 0;
+
+    &:focus {
+      background-color: $color--green;
+      border: 1px solid $color--green;
+    }
+
+    img {
+      height: 15px;
+    }
+  }
+
+  &-create-cupom {
+    border-radius: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    &:hover {
+      border: 1px solid $color--orange;
+      transition: all .4s ease-out;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  &-get-cupon {
+    color: $text--white;
+    font-size: 18px;
+    font-weight: 600;
+
+    &:hover {
+      color: $text--white;
+    }
+  }
+}

@@ -1,0 +1,152 @@
+footer {
+  font-family: 'Ubuntu Light', sans-serif;
+
+  .background-full {
+    &--light-black {
+      color: $text--gray;
+    }
+  }
+
+  .container {
+    &-assign {
+      padding: 40px 0;
+
+      .title {
+        color: $text--orange;
+        font-family: 'Ubuntu Bold', sans-serif;
+        font-size: 16px;
+        text-align: right;
+
+        @media screen and (max-width: $break-small) {
+          font-size: 22px;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+      }
+
+      form {
+        @media screen and (max-width: $break-small) {
+          margin: 0 15px;
+        }
+
+        input {
+          @media screen and (max-width: $break-small) {
+            border-top: 0;
+            margin-bottom: 5px;
+          }
+        }
+
+        .button--orange {
+          font-family: 'Ubuntu Bold', sans-serif;
+        }
+      }
+    }
+
+    &-nav {
+      padding-top: 40px;
+
+      .logo {
+        margin: 0 auto;
+        max-width: 200px;
+      }
+
+      ul {
+        margin: 0;
+        padding: 40px 0;
+
+        li {
+          color: $text--white;
+          display: inline-block;
+          list-style: none;
+
+          @media screen and (max-width: $break-small) {
+            width: 100%;
+          }
+
+          span {
+            @media screen and (max-width: $break-small) {
+              display: none;
+            }
+          }
+
+          a {
+            color: $text--white;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            padding: 20px 30px;
+
+            @media screen and (max-width: $break-small) {
+              width: 100%;
+            }
+
+            &:hover {
+              color: $text--orange;
+              text-decoration: none;
+              transition: all .4s ease-out;
+            }
+          }
+        }
+      }
+    }
+
+    &-copyright {
+      color: #818181;
+      font-size: 14px;
+      padding: 20px 0 15px 0;
+
+      @media screen and (max-width: $break-small) {
+        text-align: center;
+      }
+
+      &-icons {
+        text-align: right;
+
+        @media screen and (max-width: $break-small) {
+          margin-top: 20px;
+          text-align: center;
+        }
+
+        ul {
+          margin: 0 !important;
+
+          @media screen and (max-width: $break-small) {
+            padding: 0;
+          }
+
+          li {
+            display: inline-block;
+            list-style: none;
+
+            &:nth-child(4) {
+              padding-left: 5px;
+            }
+
+            a {
+              display: inline-block;
+              padding: 0 5px;
+
+              &:hover {
+                text-decoration: none;
+                transition: all .4s ease-out;
+              }
+
+              img {
+                max-height: 30px;
+              }
+            }
+
+            &.border {
+              border: 1px solid #818181!important;
+              bottom: -5px;
+              height: 40px;
+              position: absolute;
+              width: 1px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,154 @@
+header {
+  .header {
+    &-top {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      padding: 15px 0;
+
+      ul {
+        margin: 0;
+
+        li {
+          list-style: none;
+          display: inline-block;
+
+          a {
+            color: $text--black;
+            padding-right: 5px;
+
+            &:hover {
+              text-decoration: none;
+            }
+
+            img {
+              height: 15px;
+              margin: 0 5px;
+              margin-top: -3px;
+            }
+          }
+        }
+      }
+
+      .user-bar {
+        @media screen and (max-width: $break-medium) {
+          margin: 10px 0 20px;
+          text-align: center;
+        }
+      }
+
+      &-access {
+        text-align: right;
+
+        @media screen and (max-width: $break-medium) {
+          text-align: center;
+        }
+
+        ul {
+          @media screen and (max-width: $break-medium) {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+
+    &-search {
+      margin-bottom: 40px;
+      margin-top: 40px;
+
+      .logo {
+        max-width: 405px;
+
+        @media screen and (max-width: $break-medium) {
+          margin: 0 auto;
+        }
+      }
+
+      form {
+        float: right;
+
+        @media screen and (max-width: $break-medium) {
+          margin-top: 20px;
+          text-align: center;
+        }
+
+        input {
+          border-radius: 0;
+          border-right: 0;
+          margin-right: 0 !important;
+
+          @media screen and (max-width: $break-small) {
+            border-right: 2px solid $color--gray;
+          }
+        }
+
+        .location {
+          position: relative;
+
+          @media screen and (max-width: $break-small) {
+            margin-bottom: 0;
+            width: 100%;
+          }
+
+          img {
+            display: inline-block;
+            height: 20px;
+            left: 10px;
+            position: absolute;
+            top: 8px;
+
+            @media screen and (max-width: $break-small) {
+              top: 10px;
+            }
+          }
+
+          input {
+            padding-left: 30px;
+          }
+
+          .dropdown {
+            &-menu {
+              background-clip: content-box;
+              max-height: 200px;
+              overflow: scroll;
+              overflow-x: hidden;
+              width: 120%;
+
+              &::-webkit-scrollbar {
+                  width: .5em;
+              }
+
+              &::-webkit-scrollbar-track {
+                  -webkit-box-shadow: inset 0 0 6px $color--gray;
+              }
+
+              &::-webkit-scrollbar-thumb {
+                background-color: $color--gray;
+                outline: 1px solid $color--gray;
+              }
+
+              @media screen and (max-width: $break-small) {
+                margin-top: -1px;
+                width: 100%;
+              }
+            }
+            &-item {
+              &:hover {
+                background: none;
+              }
+              &:active {
+                color: $text--black;
+              }
+            }
+          }
+        }
+
+        .button-search {
+          @media screen and (max-width: $break-small) {
+            margin-top: 0 !important;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
